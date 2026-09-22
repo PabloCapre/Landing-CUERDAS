@@ -33,6 +33,21 @@ body {
     padding: 0 20px;
 }
 
+.section-title {
+    font-family: var(--font-heading);
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.section-desc {
+    text-align: center;
+    color: var(--text-muted);
+    max-width: 700px;
+    margin: 0 auto 50px;
+    font-size: 0.95rem;
+}
+
 /* Navbar */
 .navbar {
     position: fixed;
@@ -68,14 +83,14 @@ body {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 25px;
+    gap: 20px;
     align-items: center;
 }
 
 .nav-links a {
     color: var(--text-muted);
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     transition: color 0.3s;
 }
 
@@ -160,6 +175,8 @@ body {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
+    display: inline-block;
+    text-align: center;
 }
 
 .btn-primary:hover {
@@ -173,6 +190,7 @@ body {
     padding: 14px 28px;
     border-radius: 4px;
     text-decoration: none;
+    cursor: pointer;
     transition: border-color 0.3s;
 }
 
@@ -249,55 +267,152 @@ body {
     margin-bottom: 15px;
 }
 
-/* Categorías */
-.categories {
+/* Cuerdas Populares */
+.popular-section {
     padding: 90px 0;
     background-color: #14171D;
 }
 
-.section-title {
-    font-family: var(--font-heading);
-    text-align: center;
-    font-size: 2.2rem;
-    margin-bottom: 50px;
-}
-
-.category-grid {
+.popular-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
 
-.cat-card {
+.popular-card {
     background-color: var(--bg-card);
     border-radius: 8px;
     overflow: hidden;
     border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
 }
 
-.cat-card img {
+.popular-card img {
     width: 100%;
-    height: 220px;
+    height: 200px;
     object-fit: cover;
 }
 
-.cat-content {
+.popular-info {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.popular-info h3 {
+    font-family: var(--font-heading);
+    margin-bottom: 10px;
+}
+
+.popular-info p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+/* Modales */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
 }
 
-.cat-content h3 {
-    font-family: var(--font-heading);
-    margin-bottom: 8px;
+.modal-content {
+    background-color: var(--bg-card);
+    border: 1px solid var(--gold);
+    border-radius: 8px;
+    max-width: 550px;
+    width: 100%;
+    padding: 30px;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
-.cat-content p {
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.8rem;
+    color: var(--text-muted);
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: var(--gold);
+}
+
+.modal-content h2 {
+    font-family: var(--font-heading);
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+
+.modal-body img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.modal-body ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.modal-body li {
+    margin-bottom: 8px;
     color: var(--text-muted);
     font-size: 0.9rem;
+}
+
+.modal-body li strong {
+    color: var(--text-light);
+}
+
+/* Materiales */
+.materials-section {
+    padding: 90px 0;
+}
+
+.materials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.material-card {
+    background-color: var(--bg-card);
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    border-top: 3px solid var(--gold);
+}
+
+.material-card h3 {
+    font-family: var(--font-heading);
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.material-card p {
+    color: var(--text-muted);
+    font-size: 0.88rem;
 }
 
 /* Pre-Pedido */
 .preorder-section {
     padding: 90px 0;
+    background-color: #14171D;
 }
 
 .preorder-box {
@@ -359,29 +474,105 @@ input:focus, select:focus, textarea:focus {
     margin-top: 10px;
 }
 
+/* FAQs */
+.faqs-section {
+    padding: 90px 0;
+}
+
+.faq-accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 20px;
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-icon {
+    color: var(--gold);
+    font-size: 1.4rem;
+}
+
+.faq-answer {
+    display: none;
+    padding: 0 20px 20px;
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+}
+
+.faq-answer strong {
+    color: var(--gold);
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-icon {
+    content: "−";
+}
+
 /* Footer */
 footer {
     border-top: 1px solid var(--border-color);
     padding: 50px 0 20px;
+    background-color: #0B0D10;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     margin-bottom: 30px;
 }
 
 .footer-brand h3 {
     font-family: var(--font-heading);
     color: var(--gold);
+    margin-bottom: 8px;
 }
 
 .footer-brand p {
     color: var(--text-muted);
     font-size: 0.9rem;
+}
+
+.shipping-tag {
+    color: var(--gold) !important;
+    font-size: 0.85rem !important;
+    margin-top: 5px;
+}
+
+.email-link {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+.email-link:hover {
+    text-decoration: underline;
 }
 
 .ws-btn {
@@ -403,6 +594,39 @@ footer {
     font-size: 0.8rem;
     border-top: 1px solid rgba(255,255,255,0.05);
     padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px 0;
+}
+
+.waflers-credit a {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Botón Flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 58px;
+    height: 58px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    z-index: 1500;
+    transition: transform 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
 }
 
 /* Responsivo */
@@ -418,5 +642,9 @@ footer {
     }
     .nav-links {
         display: none;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
     }
 }
