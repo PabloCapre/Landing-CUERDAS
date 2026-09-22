@@ -3,19 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuerdas de Arco a Medida | Artesanales y de Alta Competición</title>
-    <meta name="description" content="Fabricación profesional de cuerdas para arcos a medida. Calidad, precisión y rendimiento para arquería tradicional, olímpica y compuesta.">
+    <title>Cuerdas de Arco a Medida | Fabricación Artesanal & Alta Competición</title>
+    <meta name="description" content="Fabricación profesional de cuerdas para arcos y ballestas a medida en Argentina. Máxima precisión, materiales premium y asesoramiento personalizado de expertos.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Cuerdas de Arco a Medida</h1>
-        <p>Próximamente el sitio oficial con catálogo, personalizado y pedidos online.</p>
-    </header>
 
-    <main>
-        <p>Estamos preparando la tienda y el configurador de cuerdas.</p>
-    </main>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand-logo">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+                    <path d="M2 12h20"/>
+                </svg>
+                <span>CUERDAS DE ARCO</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#artesania">Tradición</a></li>
+                <li><a href="#categorias">Categorías</a></li>
+                <li><a href="#proceso">Pre-Pedido</a></li>
+                <li><a href="#contacto" class="btn-nav">Asesorarme</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="badge">Manufactura Artesanal Argentina</span>
+            <h1>Máxima Tensión. <br><span class="gold-text">Precisión Absoluta.</span></h1>
+            <p>Cuerdas a medida para arcos tradicionales, olímpicos, compuestos y ballestas. Elaboradas hilo a hilo por expertos artesanos para tiro deportivo, recreativo y caza.</p>
+            <div class="hero-actions">
+                <a href="#proceso" class="btn-primary">Configurar Pre-Pedido</a>
+                <a href="#artesania" class="btn-secondary">Conocer la Confección</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Propuesta de Valor / Pilares -->
+    <section class="features">
+        <div class="container feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                </div>
+                <h3>100% Personalizadas</h3>
+                <p>Elegí material, combinación de colores, entorchados (servinados) y la medida exacta según la especificación de tu arco.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3>Garantía de Fabricante</h3>
+                <p>Años de experiencia en la fabricación técnica garantizan una cuerda equilibrada, sin elongación indeseada ni estiramiento posterior.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                </div>
+                <h3>Envíos a Todo el País</h3>
+                <p>Recibí tu cuerda en cualquier punto de Argentina con empaque protegido listo para colocar y poner a punto.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Artesano / Historia -->
+    <section id="artesania" class="craft-section">
+        <div class="container craft-container">
+            <div class="craft-img-wrapper">
+                <img src="assets/img/artesano.jpg" alt="Artesano fabricando cuerda de arco">
+            </div>
+            <div class="craft-text">
+                <span class="sub-title">Pasión & Oficio</span>
+                <h2>Más que una cuerda, una pieza de precisión</h2>
+                <p>Cada cuerda se elabora de manera artesanal sobre banco de trabajo calibrado, cuidando la tensión uniforme de cada hilo y el entorchado meticuloso de los ojales.</p>
+                <p>Sumamos décadas de experiencia en arquería, caza y confección manual para ofrecerte repuestos de calidad superior que maximizan la velocidad y agrupamiento de tus disparos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorías -->
+    <section id="categorias" class="categories">
+        <div class="container">
+            <h2 class="section-title">Nuestras Líneas de Cuerdas</h2>
+            <div class="category-grid">
+                <div class="cat-card">
+                    <img src="assets/img/competicion.jpg" alt="Cuerda de arco olímpico y competición">
+                    <div class="cat-content">
+                        <h3>Alta Competición & Olímpico</h3>
+                        <p>Materiales de bajo estiramiento y respuesta inmediata para máxima regularidad tiro a tiro.</p>
+                    </div>
+                </div>
+                <div class="cat-card">
+                    <img src="assets/img/caza.jpg" alt="Cuerdas de arco compuesto y cazador">
+                    <div class="cat-content">
+                        <h3>Caza & Arco Compuesto</h3>
+                        <p>Resistencia extrema al roce, condiciones climáticas rigurosas y alto libraje.</p>
+                    </div>
+                </div>
+                <div class="cat-card">
+                    <img src="assets/img/hero-bg.jpg" alt="Cuerdas para arcos tradicionales y ballestas">
+                    <div class="cat-content">
+                        <h3>Tradicional & Ballestas</h3>
+                        <p>Diseños específicos para rasero, Longbow, Recurvo Tradicional y fuerza de impacto de ballestas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-Pedido / Cotización -->
+    <section id="proceso" class="preorder-section">
+        <div class="container">
+            <div class="preorder-box">
+                <h2>Iniciá tu Pre-Pedido</h2>
+                <p>Completá los datos básicos de tu equipo. Nos pondremos en contacto directamente vía WhatsApp para confirmar colores, materiales específicos y coordinar el envío.</p>
+                
+                <form id="preorder-form" class="preorder-form">
+                    <div class="form-group">
+                        <label for="tipo-arco">Tipo de Arco / Equipo</label>
+                        <select id="tipo-arco" required>
+                            <option value="" disabled selected>Seleccioná tu tipo de arco</option>
+                            <option value="Recurvo Olímpico">Recurvo Olímpico</option>
+                            <option value="Recurvo Tradicional / Longbow">Recurvo Tradicional / Longbow</option>
+                            <option value="Compuesto (Compound)">Compuesto (Compound)</option>
+                            <option value="Ballesta">Ballesta</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="largo">Largo de la Cuerda (Pulgadas / cm)</label>
+                            <input type="text" id="largo" placeholder="Ej: 68 pulgadas / AMO 68" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="hilos">Cantidad de Hilos / Uso</label>
+                            <input type="text" id="hilos" placeholder="Ej: 16 hilos o 'Recomendado por fabricante'">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="detalles">Preferencias de Colores o Comentarios</label>
+                        <textarea id="detalles" rows="3" placeholder="Indicanos los colores que te gustaría combinar o si requerís asesoramiento sobre el material..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-block">Enviar Pre-Pedido por WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>CUERDAS DE ARCO</h3>
+                <p>Fabricación artesanal a medida | Argentina</p>
+            </div>
+            <div class="footer-contact">
+                <p>Atención directa por expertos y fabricantes.</p>
+                <a href="https://wa.me/5490000000000" id="ws-link" target="_blank" class="ws-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.205 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                    Consultar por WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cuerdas de Arco. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
