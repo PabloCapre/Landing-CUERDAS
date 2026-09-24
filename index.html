@@ -9,6 +9,100 @@
     <!-- Favicon -->
     <link rel="icon" type="image/jpeg" href="assets/icons/favicon.jpg">
 
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.cuerdasdearco.com.ar/">
+    <meta property="og:title" content="Cuerdas de Arco a Medida | Confección Artesanal BCY">
+    <meta property="og:description" content="Cuerdas de alta precisión para arcos tradicionales, olímpicos, compuestos y ballestas. Elaboración 100% a medida desde Mendoza a todo el país.">
+    <meta property="og:image" content="https://www.cuerdasdearco.com.ar/assets/img/hero-bg.webp">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.cuerdasdearco.com.ar/">
+    <meta name="twitter:title" content="Cuerdas de Arco a Medida | Confección Artesanal BCY">
+    <meta name="twitter:description" content="Cuerdas de alta precisión para arcos tradicionales, olímpicos, compuestos y ballestas. Elaboración 100% a medida desde Mendoza a todo el país.">
+    <meta name="twitter:image" content="https://www.cuerdasdearco.com.ar/assets/img/hero-bg.webp">
+
+    <!-- Schema JSON-LD (Google Rich Snippets) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Cuerdas de Arco",
+      "image": "https://www.cuerdasdearco.com.ar/assets/img/hero-bg.webp",
+      "@id": "https://www.cuerdasdearco.com.ar/#business",
+      "url": "https://www.cuerdasdearco.com.ar/",
+      "telephone": "+5492616550827",
+      "email": "contacto.cuerdasdearco@gmail.com",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Chacras de Coria, Luján de Cuyo",
+        "addressRegion": "Mendoza",
+        "addressCountry": "AR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -33.0039,
+        "longitude": -68.8778
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Argentina"
+      },
+      "description": "Fabricación artesanal de cuerdas para arcos y ballestas a medida con insumos BCY Bowstring de alta competición."
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿De qué material debe ser la cuerda de mi arco?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La elección del material depende del tipo de arco y sus palas. Para arcos tradicionales de madera se recomienda BCY B55 Dacron por su elasticidad controlada. Para arcos olímpicos y compuestos, utilizamos BCY 8125 Fast Flight, BCY 452X o BCY Mercury 2 por su estiramiento prácticamente nulo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo sé la medida exacta de cuerda o de los servinados?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La medida suele expresarse en longitud real en pulgadas o en estándar AMO. En nuestro taller artesanal en Chacras de Coria, Mendoza, te guiamos paso a paso sobre cómo medir la cuerda vieja con cinta métrica bajo ligera tensión."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué cobertura tiene la Garantía de Confección?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nuestra garantía cubre estrictamente defectos de fabricación artesanal, fallas estructurales del hilo BCY o desarme involuntario de servinados. No cubre disparos en seco (dry fire) ni mal mantenimiento."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuáles son los cuidados esenciales para prolongar la vida de la cuerda?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Es fundamental aplicar cera sintética o de abeja especial para cuerdas de manera regular frotándola con los dedos para humectar las hebras internas y guardar el arco lejos del sol directo y fuentes de calor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Realizan envíos a todo el país desde Mendoza?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, realizamos envíos de cuerdas de arco artesanales a todas las provincias de Argentina mediante servicio de expreso o transporte a convenir."
+          }
+        }
+      ]
+    }
+    </script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,11 +116,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="#" class="brand-logo">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="10"/>
-                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
-                    <path d="M2 12h20"/>
-                </svg>
+                <img src="assets/icons/favicon.jpg" alt="Logo Cuerdas de Arco" class="logo-icon">
                 <span>CUERDAS DE ARCO</span>
             </a>
 
@@ -94,7 +184,7 @@
     <section id="artesania" class="craft-section">
         <div class="container craft-container">
             <div class="craft-img-wrapper">
-                <img src="assets/img/artesano.jpg" alt="Artesano Piero fabricando cuerda de arco a medida en taller de Mendoza">
+                <img src="assets/img/artesano.webp" alt="Artesano Piero fabricando cuerda de arco a medida en taller de Mendoza" loading="lazy">
             </div>
             <div class="craft-text">
                 <span class="sub-title">Pasión & Oficio en Mendoza</span>
@@ -114,7 +204,7 @@
             <div class="popular-grid">
                 <!-- Modelo 1 -->
                 <div class="popular-card">
-                    <img src="assets/img/tradicional.jpg" alt="Recurvo tradicional palas de madera">
+                    <img src="assets/img/tradicional.webp" alt="Recurvo tradicional palas de madera" loading="lazy">
                     <div class="popular-info">
                         <h3>Recurvo Tradicional (Palas de Madera)</h3>
                         <p>Diseñada específicamente para proteger la estructura de las palas de madera manteniendo un disparo fluido.</p>
@@ -124,7 +214,7 @@
 
                 <!-- Modelo 2 -->
                 <div class="popular-card">
-                    <img src="assets/img/olimpico.jpg" alt="Recurvo olímpico palas sintéticas">
+                    <img src="assets/img/olimpico.webp" alt="Recurvo olímpico palas sintéticas" loading="lazy">
                     <div class="popular-info">
                         <h3>Recurvo Olímpico (Palas Sintéticas)</h3>
                         <p>Respuesta ultrarrápida y consistencia para tiro deportivo con arcos sintéticos de alta gama.</p>
@@ -134,7 +224,7 @@
 
                 <!-- Modelo 3 -->
                 <div class="popular-card">
-                    <img src="assets/img/compuesto.jpg" alt="Compuestos Caza y Competición">
+                    <img src="assets/img/compuesto.webp" alt="Compuestos Caza y Competición" loading="lazy">
                     <div class="popular-info">
                         <h3>Compuestos (Caza & Competición)</h3>
                         <p>Juegos de cuerda y cables de alto rendimiento para soportar la fricción de poleas y alto libraje.</p>
@@ -144,7 +234,7 @@
 
                 <!-- Modelo 4 -->
                 <div class="popular-card">
-                    <img src="assets/img/ballesta.jpg" alt="Cuerda para Ballestas">
+                    <img src="assets/img/ballesta.webp" alt="Cuerda para Ballestas" loading="lazy">
                     <div class="popular-info">
                         <h3>Ballestas</h3>
                         <p>Estructura reforzada para resistir la máxima tensión y potencia de impacto extrema.</p>
@@ -161,7 +251,7 @@
             <span class="close-modal">&times;</span>
             <h2>Recurvo Tradicional (Palas de Madera)</h2>
             <div class="modal-body">
-                <img src="assets/img/tradicional.jpg" alt="Recurvo tradicional">
+                <img src="assets/img/tradicional.webp" alt="Recurvo tradicional" loading="lazy">
                 <ul>
                     <li><strong>Material recomendado:</strong> BCY B55 Dacron.</li>
                     <li><strong>Entorchado (Serving):</strong> BCY 3D.</li>
@@ -178,7 +268,7 @@
             <span class="close-modal">&times;</span>
             <h2>Recurvo Olímpico (Palas Sintéticas)</h2>
             <div class="modal-body">
-                <img src="assets/img/olimpico.jpg" alt="Recurvo olímpico">
+                <img src="assets/img/olimpico.webp" alt="Recurvo olímpico" loading="lazy">
                 <ul>
                     <li><strong>Material recomendado:</strong> BCY 8125 Fast Flight.</li>
                     <li><strong>Entorchado (Serving):</strong> BCY 3D para loops (ojales) y BCY Powergrip para el servinado central.</li>
@@ -195,7 +285,7 @@
             <span class="close-modal">&times;</span>
             <h2>Compuestos (Caza & Competición)</h2>
             <div class="modal-body">
-                <img src="assets/img/compuesto.jpg" alt="Arco Compuesto">
+                <img src="assets/img/compuesto.webp" alt="Arco Compuesto" loading="lazy">
                 <ul>
                     <li><strong>Material recomendado:</strong> BCY 452X.</li>
                     <li><strong>Entorchado (Serving):</strong> BCY 2X para paso de polea y loops / BCY Halo o Powergrip para el central.</li>
@@ -212,7 +302,7 @@
             <span class="close-modal">&times;</span>
             <h2>Ballestas</h2>
             <div class="modal-body">
-                <img src="assets/img/ballesta.jpg" alt="Ballestas">
+                <img src="assets/img/ballesta.webp" alt="Ballestas" loading="lazy">
                 <ul>
                     <li><strong>Material recomendado:</strong> BCY Mercury 2.</li>
                     <li><strong>Entorchado (Serving):</strong> BCY 2X para paso de polea y loops / BCY Halo para el central.</li>
@@ -399,7 +489,7 @@
                 <div class="faq-item">
                     <button class="faq-question">¿Qué cobertura tiene la Garantía de Confección? <span class="faq-icon">+</span></button>
                     <div class="faq-answer">
-                        <p>Nuestra garantía cubre estrictamente <strong>defectos de fabricación artesanal, fallas estructurales del hilo BCY o desarme involuntario de servinados</strong>. La garantía NO cubre daños derivados de mal uso (disparos en seco / dry fire), roces por falta de cera, almacenamiento en zonas de humedad o calor extremo, ni cortes por bordes filosos no pulidos en el arnés o poleas del arco.</p>
+                        <p>Nuestra garantía cubre strictly <strong>defectos de fabricación artesanal, fallas estructurales del hilo BCY o desarme involuntario de servinados</strong>. La garantía NO cubre daños derivados de mal uso (disparos en seco / dry fire), roces por falta de cera, almacenamiento en zonas de humedad o calor extremo, ni cortes por bordes filosos no pulidos en el arnés o poleas del arco.</p>
                     </div>
                 </div>
 
@@ -433,7 +523,7 @@
                 <p>✉️ Email: <a href="mailto:contacto.cuerdasdearco@gmail.com" class="email-link">contacto.cuerdasdearco@gmail.com</a></p>
                 <a href="https://wa.me/5492616550827?text=Hola%20Piero,%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20cuerdas%20de%20arco." target="_blank" class="ws-btn">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984 0 1.762.459 3.48 1.332 5.001l-1.416 5.169 5.305-1.385c1.464.798 3.118 1.218 4.767 1.219h.004c5.505 0 9.988-4.478 9.989-9.985 0-2.668-1.038-5.176-2.925-7.062a9.923 9.923 0 0 0-7.066-2.941zm5.82 14.161c-.246.692-1.228 1.269-1.696 1.349-.467.08-1.071.114-1.728-.095-.398-.127-.912-.293-1.572-.577-2.775-1.198-4.587-4.004-4.726-4.189-.139-.186-1.131-1.503-1.131-2.868 0-1.365.717-2.036.972-2.315.255-.279.557-.349.742-.349.185 0 .371.002.533.01.173.008.406-.065.635.485.232.556.788 1.921.857 2.06.069.14.116.302.023.487-.093.185-.139.301-.278.463-.139.163-.292.364-.418.489-.139.139-.284.29-.122.568.162.278.72 1.189 1.547 1.925 1.063.947 1.958 1.242 2.237 1.381.279.139.441.116.603-.07.162-.186.696-.812.881-1.09.185-.278.371-.232.626-.139.255.093 1.623.765 1.901.904.278.139.463.209.533.325.07.116.07.672-.176 1.364z"/></svg>
-                    Consultar a Piero por WhatsApp
+                    Consultar por WhatsApp
                 </a>
             </div>
         </div>

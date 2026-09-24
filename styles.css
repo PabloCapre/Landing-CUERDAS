@@ -92,6 +92,14 @@ body {
     letter-spacing: 1px;
 }
 
+/* Filtro CSS para convertir el logo/favicon PNG a color Dorado #D4AF37 */
+.logo-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    filter: invert(72%) sepia(51%) saturate(544%) hue-rotate(5deg) brightness(92%) contrast(89%);
+}
+
 .nav-links {
     display: flex;
     list-style: none;
@@ -145,7 +153,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('assets/img/hero-bg.jpg') center/cover no-repeat;
+    background: url('assets/img/hero-bg.webp') center/cover no-repeat;
     padding: 120px 20px 50px;
     text-align: center;
 }
